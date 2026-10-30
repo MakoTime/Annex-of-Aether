@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://db12214xi42dq"]
+
+[ext_resource type="PackedScene" uid="uid://yximxm2j6ilw" path="res://card.tscn" id="1_10qol"]
+
+[node name="deck_in_hand" type="Node2D" unique_id=1059665172]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1381332084]
+
+[node name="EncounterCard" parent="CanvasLayer" unique_id=1414902829 instance=ExtResource("1_10qol")]
+position = Vector2(309, 227)

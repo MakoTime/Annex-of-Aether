@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PassiveData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Cards/Passives/passive_data.gd" id="1_passive"]
+[ext_resource type="Script" path="res://Scripts/Cards/Passives/passive_action_data.gd" id="2_action"]
+
+[sub_resource type="Resource" id="Resource_attack_buff"]
+script = ExtResource("2_action")
+id = &"attack_buff"
+amount = 1
+stat = &"attack"
+
+[resource]
+script = ExtResource("1_passive")
+id = &"retaliation"
+actions = Array[ExtResource("2_action")]([SubResource("Resource_attack_buff")])
